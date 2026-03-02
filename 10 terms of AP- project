@@ -1,0 +1,15 @@
+print("="*30)
+print("      10 TERMS OF AN AP")
+print("="*30)
+
+firstTerm = int(input("Enter the first term: "))
+commonDifference = int(input("Enter the common difference: "))
+
+tenthTerm = firstTerm + (10 - 1) * commonDifference
+
+print("First Term: {}".format(firstTerm))
+print("Common Difference: {}".format(commonDifference))
+
+for term in range(firstTerm, tenthTerm + commonDifference, commonDifference):
+    print("{}".format(term), end=" -> ")
+print("END!")
