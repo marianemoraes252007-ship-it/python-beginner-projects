@@ -1,0 +1,23 @@
+# Exercise: Financial Result Calculation (Finance)
+
+campaignRevenue = 28000
+operationalCosts = 9500
+taxRate = 0.15
+
+taxAmount = campaignRevenue * taxRate
+netProfit = (campaignRevenue - operationalCosts) - taxAmount
+profitMargin = netProfit / campaignRevenue
+
+print(f"Campaign revenue: ${campaignRevenue},00")
+print(f"Operational costs: ${operationalCosts},00")
+print(f"Tax on revenue: {taxRate:.0%}")
+print("-" * 45)
+
+print(f"Tax amount: ${taxAmount}")
+print(f"Net profit: ${netProfit}")
+print(f"Profit margin: {profitMargin:.2f}")
+
+if profitMargin > 0.25:
+    print("- Healthy result! Above 25%")
+else:
+    print("- Unhealthy result! Below 25%")
